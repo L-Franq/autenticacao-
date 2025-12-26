@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(express.static("public"));
 
-require("../databases/init");
+require("./databases/init");
 
 const authRoutes = require("./routes/authRoutes");
 
